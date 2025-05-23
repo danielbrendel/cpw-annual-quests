@@ -169,7 +169,7 @@ class CNewYearsEveQuest : IQuestEntity {
 		
 		this.m_oFireworkExplosion.Process();
 		
-        if ((!CVar_GetBool(QUEST_SETTING, false)) && ((this.m_dtNow.get_day() == 22) || (this.m_dtNow.get_day() == 1))) {
+        if ((!CVar_GetBool(QUEST_SETTING, false)) && ((this.m_dtNow.get_day() == 31) || (this.m_dtNow.get_day() == 1))) {
 			CVar_SetBool(QUEST_SETTING, true);
 			HUD_AddMessage("Get your New Years Eve presents!", HUD_MSG_COLOR_BLUE);
         }
