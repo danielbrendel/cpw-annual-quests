@@ -1,0 +1,3 @@
+script christmas.as
+gfx xmas-tree.png
+gfx xmas-presents.png

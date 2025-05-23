@@ -1,0 +1,10 @@
+script halloween.as
+gfx ghost_anim.png
+gfx pumpkin_blue.png
+gfx pumpkin_green.png
+gfx pumpkin_orange.png
+gfx pumpkin_purple.png
+gfx pumpkin_striped.png
+gfx pumpkin_white.png
+sound ghost_spawn.wav
+sound ghost_poop.wav

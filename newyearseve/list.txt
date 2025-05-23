@@ -1,0 +1,7 @@
+script newyearseve.as
+gfx fireworks_spritesheet.png
+gfx happnewyear_text.png
+sound fireworks01.wav
+sound fireworks02.wav
+sound fireworks03.wav
+sound fireworks04.wav
