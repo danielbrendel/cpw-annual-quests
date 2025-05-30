@@ -193,7 +193,8 @@ class CNewYearsEveQuest : IQuestEntity {
         if (CVar_GetBool(QUEST_SETTING, false)) {
             if (!CVar_GetBool(QUEST_REDEEMED, false)) {
                 CVar_SetBool(QUEST_REDEEMED, true);
-                HUD_UpdateCollectable("gems", HUD_GetCollectableCount("gems") + 30);
+                HUD_UpdateCollectable("coins", HUD_GetCollectableCount("coins") + 200);
+				HUD_UpdateCollectable("gems", HUD_GetCollectableCount("gems") + 30);
                 HUD_AddMessage(">> !! Happy New Year !! <<", HUD_MSG_COLOR_BLUE);
                 S_PlaySound(this.m_hRedeem, S_GetCurrentVolume());
             }

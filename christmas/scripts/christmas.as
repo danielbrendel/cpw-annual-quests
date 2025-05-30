@@ -217,7 +217,11 @@ class CChristmasQuest : IQuestEntity {
         if (CVar_GetBool(QUEST_SETTING, false)) {
             if (!CVar_GetBool(QUEST_REDEEMED, false)) {
                 CVar_SetBool(QUEST_REDEEMED, true);
-                HUD_UpdateCollectable("gems", HUD_GetCollectableCount("gems") + 15);
+                HUD_UpdateCollectable("food_apple", HUD_GetCollectableCount("food_apple") + 20);
+				HUD_UpdateCollectable("food_pear", HUD_GetCollectableCount("food_pear") + 20);
+				HUD_UpdateCollectable("food_strawberry", HUD_GetCollectableCount("food_strawberry") + 20);
+				HUD_UpdateCollectable("food_orange", HUD_GetCollectableCount("food_orange") + 20);
+				HUD_UpdateCollectable("gems", HUD_GetCollectableCount("gems") + 15);
                 HUD_AddMessage("Merry christmas and a happy new year!", HUD_MSG_COLOR_BLUE);
                 S_PlaySound(this.m_hRedeem, S_GetCurrentVolume());
             }
