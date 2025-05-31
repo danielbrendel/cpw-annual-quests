@@ -201,7 +201,7 @@ class CMentalHealthMonthQuest : IQuestEntity {
 		this.m_dtNow = datetime();
 	
         this.m_dtStart = datetime(this.m_dtNow.get_year(), 5, 15, 2, 0, 0);
-        this.m_dtEnd = datetime(this.m_dtNow.get_year() + 1, 5, 31, 22, 0, 0);
+        this.m_dtEnd = datetime(this.m_dtNow.get_year(), 5, 31, 22, 0, 0);
 		
 		this.m_tmrSpawnHeart.SetDelay(Util_Random(QUEST_HEART_TIMER_MIN, QUEST_HEART_TIMER_MAX));
 		this.m_tmrSpawnHeart.Reset();
